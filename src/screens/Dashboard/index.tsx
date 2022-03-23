@@ -4,7 +4,7 @@ import { TransactionCard, TransactionCardProps } from '../../components/Transact
 
 import { Container, Header, UserInfo, Photo, User, 
     UserGeeting, UserName, UserWrapper, Icon, HighlightCards,
-    Transactions, Title, TransactionList
+    Transactions, Title, TransactionList, LogoutButton
 } from './styles';
 
 export interface DataListProps extends TransactionCardProps {
@@ -55,7 +55,10 @@ export function Dashboard() {
                             <UserName>Guilherme</UserName>
                         </User>
                     </UserInfo>
-                    <Icon name="power" />
+                    <LogoutButton onPress={() => {}}>
+                        <Icon name="power" />
+                    </LogoutButton>
+                    {/* </LogoutButton> */}
                 </UserWrapper>
             </Header>
 
